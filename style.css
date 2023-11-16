@@ -7,6 +7,19 @@
 
 body {
     background: linear-gradient(135deg, rgb(45, 28, 139), #a828c9);
+    margin: 50px 2%;
+}
+
+.title-container {
+    font-size: 24px;
+    text-align:center;
+}
+
+.inputcol {
+    display: grid;
+    grid-template-columns: 60% 10%;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .container{
@@ -14,11 +27,4 @@ body {
     min-height: 100vh;
     padding: 10px;
 }
-.todo-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px;
-    border-radius: 10px;
-}
+
