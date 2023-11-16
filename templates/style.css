@@ -4,10 +4,14 @@
     font-family: 'Poppins', san-serif;
     box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient(135deg, rgb(45, 28, 139), #a828c9);
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgb(45, 28, 139), #a828c9);
     padding: 10px;
 }
 .todo-app{
