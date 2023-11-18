@@ -3,50 +3,123 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    
 }
 
-body {
-    background: linear-gradient(135deg, rgb(45, 28, 139), #a828c9);
-    margin: 50px 2%;
+.background{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(135deg, rgb(45, 28, 139), #a828c9); 
+    align-items: center;
 }
-
 .title-container {
+    
     font-size: 24px;
     text-align: center;
     margin-top: 20px; 
 }
 
 .inputcol {
+    /*
+    
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+    */
+
+    border: none;
+    outline: none;
+    
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
+    margin-top: 20px;  
 }
 
-.input-box {
+
+
+.textarea {
     width: 80%; 
     margin-right: 10px;
 }
 
 .buttoninput {
-    width: 20%; 
+    width: 20%;
 }
 
 .container {
+
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     padding: 10px;
     display: flex;
     flex-direction: column; 
     align-items: center;
+    margin-top: 20px;
 }
 
-ul li {
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px
+.todolist {
+    
+    
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    
 }
 
-ul li.checked{
-    color: #d61010;
-    text-decoration: line-through
+.check-button{
+    width: 30px;
+    height: 30px;
+}
+
+.trash-button{
+    align-items: right;
+    width: 30px;
+    height: 30px;
+}
+
+.checked{
+    color: #000000;
+    text-decoration: line-through;
+}
+
+/* Use this class to update png after item is checked off.
+   requires that there is another container that has the unchecked png.
+
+.checked::before{
+    background-image: url(images/checked.png);
+} */
+
+.check-button:hover {
+    background-color: grey;
+}
+
+.trash-button:hover {
+    background-color: grey;
+}
+
+.buttoninput:hover {
+    background-color: grey;
+}
+
+.kanye {
+    width: 50%;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.fortnite {
+    width: 50%;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -11,29 +11,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>To-Do List Web App</title>
 
-        
+        <!-- added for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- added for style.css-->
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="background">
         <div class="title-container">
             <h1> To Do List </h1>
         </div>
         <div class="container">
             <div class="inputcol">
-                <input type="text" id="input-box" placeholder="Input here">
-                
-                <button type="button" class="buttoninput"> Submit </button> <!-- For adding -->
+                <input type="text" class="textarea" id="input-box" placeholder="Input here">
+                <button type="button" class="buttoninput"> <i class="fa-solid fa-plus"></i> </button> <!-- For adding -->
             </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li> -->
-            </ul>
         </div>
-
         <div class="todolist">
-
+            <!-- This is what the addItem() class puts into the html -->
+            <!-- <div class="newItem">
+                <p class="itemcontent">test</p>
+                <button class="check-button"><i class="fa-solid fa-check"></i></i></button>
+                <button class="trash-button"><i class="fa-solid fa-trash"></i></button>
+            </div> -->
         </div>
+        <!-- <img src="images/kanye.png" class="kanye" alt="kanye"> -->
+        <!-- <img src="images/fortnite.gif" class="fortnite"> -->
+        <p>19 dollar fortnite card</p>
     <script src="script.js" defer></script>
     </body>
 </html>
