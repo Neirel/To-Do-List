@@ -18,9 +18,10 @@ function addItem() {
     newItem.classList.add('newItem')
     
     // creates an element for the text in our item
-    const itemContent = document.createElement('p');
+    const itemContent = document.createElement('p')
     // adds a class 'item' to the element
     itemContent.classList.add('itemcontent')
+    itemContent.contentEditable = "true"
     // the text of the element 'p' is what the text is in our query selector
     itemContent.innerText = textinput.value
     // add the itemContent to the newItem div
@@ -78,6 +79,7 @@ function checkItem(event) {
        todolistitem.classList.toggle('checked')
     }
 }
+
 // Function to save the 
 // function saveData(){
 //     localStorage.setItem("data", todolist.innerHTML);
