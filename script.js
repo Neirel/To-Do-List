@@ -5,6 +5,8 @@ const buttoninput = document.querySelector('.submitbutton');
 // Grabs the list of items in todo list
 const itemlist = document.querySelector('.todolist');
 
+const bestinput = document.querySelector('.bestbutton');
+
 function clickButton(event) {
     // function to call addItem
     event.preventDefault();
@@ -92,6 +94,13 @@ function checkItem(event) {
 //showTask();
 //
 // checks for button clicks
+
+function bestsound() {
+    const dj = new Audio("assets/best.mp3");
+    dj.play();
+}
+
+bestinput.addEventListener("click", bestsound)
 buttoninput.addEventListener('click', clickButton)
 itemlist.addEventListener('click', deleteItem)
 itemlist.addEventListener('click', checkItem)

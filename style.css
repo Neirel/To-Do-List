@@ -35,7 +35,7 @@
     padding: 10px;
 }
 
-.submitbutton {
+.submitbutton{
     border-radius: 0 10px 10px 0;
     min-width: 100%;
     max-width: 100%;
@@ -138,4 +138,22 @@ button > i {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+
+.bestcontainer {
+    height: 200px;
+    margin-top: 15%;
+    position: relative;
+}
+
+.bestbutton {
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
