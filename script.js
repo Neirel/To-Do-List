@@ -1,7 +1,7 @@
 // Grabs text
 const textinput = document.querySelector('.textarea');
 // Grabs button input
-const buttoninput = document.querySelector('.buttoninput');
+const buttoninput = document.querySelector('.submitbutton');
 // Grabs the list of items in todo list
 const itemlist = document.querySelector('.todolist');
 
@@ -20,7 +20,7 @@ function addItem() {
     // creates an element for the text in our item
     const itemContent = document.createElement('p');
     // adds a class 'item' to the element
-    itemContent.classList.add('itemContent')
+    itemContent.classList.add('itemcontent')
     // the text of the element 'p' is what the text is in our query selector
     itemContent.innerText = textinput.value
     // add the itemContent to the newItem div
@@ -28,12 +28,12 @@ function addItem() {
 
     // if textbox is empty, do nothing
     if (textinput.value === '') {
-        // alert("Please input a task!");
+        alert("Please input a task!");
         return
     } else {
         // create a button to check off items
         const checkbutton = document.createElement("button")
-        // makes the text inside button to say check
+        // check icon
         checkbutton.innerHTML = '<i class="fa-solid fa-check"></i>'
         // adds class
         checkbutton.classList.add("check-button")

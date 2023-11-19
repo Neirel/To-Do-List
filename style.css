@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    cursor: url("images/kanye_cursor.png"), auto;
     
 }
 
@@ -19,34 +20,41 @@
     margin-top: 20px; 
 }
 
-.inputcol {
-    /*
-    
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-
-    */
-
-    border: none;
-    outline: none;
-    
-    display: flex;
+.inputsection {    
+    display: grid;
+    grid-template-columns: 60% 15%;
     justify-content: center;
-    margin-top: 20px;  
+    /* column-gap: 5px; */
 }
 
-
-
 .textarea {
-    width: 80%; 
-    margin-right: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px 0 0 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.submitbutton {
+    border-radius: 0 10px 10px 0;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+
+/* removes orange outline when typing in input*/
+.textarea:focus {
+    outline: none;
+}
+
+/* fixes button click bug */
+button > i {
+    pointer-events: none;
 }
 
 .buttoninput {
-    width: 20%;
+    /* border-radius: 10px; */
+    font-size: 20px
 }
 
 .container {
@@ -62,25 +70,41 @@
 
 .todolist {
     
-    
-    flex-direction: column;
-    word-wrap: break-word;
-    background-color: white;
+    /* background-color: white; */
     padding: 10px;
     margin: auto;
     width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+.newItem {
+    display: grid;
+    grid-template-columns: 60% 10% 10%;
+    justify-content: center;
     
+    padding: 10px 10px;
 }
 
-.check-button{
-    width: 30px;
-    height: 30px;
+.itemcontent {
+    border-radius: 10px 0 0 10px;
+    word-wrap: break-word;
+    background-color: white;
+    min-height: 50px;
+    padding: 15px;
 }
 
-.trash-button{
-    align-items: right;
-    width: 30px;
-    height: 30px;
+.check-button, .trash-button {
+    border: none;
+    background-color: white;
+}
+
+.check-button {
+    font-size: 15px;
+}
+
+.trash-button {
+    font-size: 12px;
+    border-radius: 0 10px 10px 0;
 }
 
 .checked{
@@ -95,15 +119,7 @@
     background-image: url(images/checked.png);
 } */
 
-.check-button:hover {
-    background-color: grey;
-}
-
-.trash-button:hover {
-    background-color: grey;
-}
-
-.buttoninput:hover {
+.check-button:hover, .trash-button:hover, .buttoninput:hover{
     background-color: grey;
 }
 
