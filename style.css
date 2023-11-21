@@ -127,3 +127,7 @@ button > i {
     margin-left: auto;
     margin-right: auto;
 }
+
+.newItem.dragging {
+    opacity: 0.5; /* Add your preferred styling for the dragged item */
+}
