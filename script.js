@@ -26,7 +26,7 @@ function addItem() {
     newItem.draggable = true; //makes items draggable
 
     // Add a black border to the newItem
-    newItem.style.border = '1px solid black';
+    
     
     // creates an element for the text in our item
     const itemContent = document.createElement('p');

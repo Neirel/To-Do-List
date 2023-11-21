@@ -131,3 +131,7 @@ button > i {
 .newItem.dragging {
     opacity: 0.5; /* Add your preferred styling for the dragged item */
 }
+
+.newItem:not(:empty) {
+    border: 1px solid black; /* 1px width, solid style, black color */
+}
