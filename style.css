@@ -45,6 +45,10 @@
     margin-right: 10px;
 }
 
+button > i {
+    pointer-events: none;
+}
+
 .buttoninput {
     width: 20%;
 }
