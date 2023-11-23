@@ -5,6 +5,9 @@ const buttoninput = document.querySelector('.buttoninput');
 // Grabs the list of items in todo list
 const itemlist = document.querySelector('.todolist');
 
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+
 function clickButton(event) {
     // function to call addItem
     event.preventDefault();
@@ -127,6 +130,10 @@ function handleDragEnd(event) {
     // remove the dragging class when drag operation is complete
     event.target.classList.remove('dragging');
 }
+
+darkModeToggle.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
 // Function to save the 
 // function saveData(){
 //     localStorage.setItem("data", todolist.innerHTML);
